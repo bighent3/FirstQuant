@@ -1,4 +1,4 @@
-import dash
+import dasha
 import yfinance as yf
 import pandas as pd
 from dash import html, dcc
@@ -19,6 +19,7 @@ app.layout = html.Div(children=[
                  'y':[0.25, 0.25, 0.25, 0.5, 1], 'type': 'bar', 'name':'Bar chart'},
                 {'x':['July 31, 2019','September 18, 2019', 'October 30, 2019', 'March 3, 2020', 'March 15, 2020'], 
                  'z':[2,4,5,8], 'type': 'line', 'name':'Line chart'}
+                # Other Chart types:
             ],
             'layout': {
                 'title':'Dash Data Visualization'
@@ -50,3 +51,4 @@ if __name__ == '__main__':
 # Run File
 
 # copy socket address socket address = IP Address + Port Number
+
